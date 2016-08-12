@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 import pymysql
 import sys
-#nothing
+
 class TransferMoney(object):
 	def __init__(self,conn):
 		self.conn=conn
