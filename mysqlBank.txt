@@ -1,0 +1,8 @@
+1.set mysql
+	CREATE DATABASE bank;
+	USE bank;
+	CREATE TABLE account(acctid BIGINT(11) DEFAULT NULL,money BIGINT(11) DEFAULT NULL) ENGINE=INNODB DEFAULT CHARSET=utf8;
+	INSERT INTO account (acctid,money) VALUES (11,110);
+	INSERT INTO account (acctid,money) VALUES (12,10);
+2./home/shanks/py
+	python3 mysqlBank.py 11 12 100
